@@ -1,6 +1,10 @@
 .env.development是工作环境
 .env.production是生产环境
 
+## 深度选择器
+
+当 <style> 标签有 scoped 属性时，它的 CSS 只作用于当前组件中的元素，父组件的样式将不会渗透到子组件。 如果你希望 scoped 样式中的一个选择器能够作用得“更深”，例如影响子组件，你可以使用深度选择器。
+
 ## export 与 export default的区别
 
 export与export default均可用于导出常量、函数、文件、模块等

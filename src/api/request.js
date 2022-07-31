@@ -10,7 +10,7 @@ const service = axios.create({
   timeout: 5000
 })
 
-// 为每一个接口添加上token信息
+// 判断登录时候过期、登出，为每一个接口添加上token信息
 service.interceptors.request.use(
   (config) => {
     if (localStorage.getItem('token')) {
